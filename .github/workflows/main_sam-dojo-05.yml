@@ -32,6 +32,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'sam-dojo-05'
-          slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7C1E79C23604480EA40D25E7809E32C6 }}
           package: ./dist/angular12-dojo
